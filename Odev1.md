@@ -3,7 +3,7 @@
 ---
 ### Soru 1
 
-` SQL SELECT title,description FROM film``
+` SQL SELECT title,description FROM film`
 
 ### Soru 2
 ``` SQL
