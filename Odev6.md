@@ -16,6 +16,6 @@ WHERE rental_rate = 0.99;
 ```
 ### SORU 4
 ``` SQL
-SELECT COUNT(replacement_cost) FROM film
+SELECT COUNT(DISTINCT (replacement_cost)) FROM film
 WHERE length > 150;
 ``` 
