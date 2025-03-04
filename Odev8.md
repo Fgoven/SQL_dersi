@@ -64,5 +64,50 @@ insert into employee (name, birthday, email) values ('Marji Wasbrough', '1934-02
 ```
 ### SORU 3
 ``` SQL
-
+--UPDATE 1
+UPDATE employee
+SET name = 'Fatma Goven',
+	birthday = '1997-01-01',
+	email = 'fgoven@gg.com'
+WHERE id = '7';
+--UPDATE 2
+UPDATE employee
+SET name = 'Umit Goven',
+	birthday = '1996-05-22',
+	email = 'ugoven@gg.com'
+WHERE id = '8';
+--UPDATE 3
+UPDATE employee
+	SET name = 'ADD LATER',
+	birthday = NULL,
+	email = NULL
+WHERE name LIKE ('P%');
+--UPDATE 4
+UPDATE employee
+	SET email = 'WRONG EMAIL CORRECTED LATER'
+WHERE email LIKE ('%.org');
+--UPDATE 5
+UPDATE employee
+	SET name = 'xxx',
+	birthday = NULL,
+	email = NULL
+WHERE id > 25;
+```
+## SORU 4
+``` SQL
+--DELETE 1
+DELETE FROM employee
+WHERE id = '9';
+--DELETE 2
+DELETE FROM employee
+WHERE name = 'ADD LATER';
+--DELETE 3
+DELETE FROM employee
+WHERE name LIKE ('Z%');
+--DELETE 4
+DELETE FROM employee
+WHERE birthday IN ('1997-01-01');
+--DELETE 5
+DELETE FROM employee
+WHERE email LIKE ('%.org');
 ```
